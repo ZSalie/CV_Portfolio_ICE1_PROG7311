@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZSalie · Developer Portfolio</title>
+    <title>ZSalie · Aspiring Data Analyst</title>
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
 
         a {
             text-decoration: none;
-            color: #2563eb;
+            color: #0d9488; /* Teal accent */
         }
 
         /* ===== UTILITY CLASSES ===== */
@@ -91,12 +91,18 @@
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: #0d9488; /* Teal on hover */
         }
 
-        /* ===== HERO SECTION ===== */
+        /* ===== HERO SECTION (with subtle dot pattern and teal gradient) ===== */
         #hero {
-            background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+            /* Gradient with teal tint */
+            background: linear-gradient(135deg, #ccfbf1 0%, #ffffff 100%);
+            /* Overlay dot pattern */
+            background-image: 
+                linear-gradient(135deg, #ccfbf1 0%, #ffffff 100%),
+                radial-gradient(circle at 20px 20px, rgba(13,148,136,0.05) 2px, transparent 2px);
+            background-size: auto, 40px 40px;
             padding: 80px 0;
             text-align: center;
         }
@@ -111,14 +117,14 @@
 
         .hero-content .tagline {
             font-size: 1.4rem;
-            color: #475569;
+            color: #334155;
             margin-bottom: 24px;
             font-weight: 400;
         }
 
         .hero-content .btn {
             display: inline-block;
-            background-color: #2563eb;
+            background-color: #0d9488; /* Teal button */
             color: white;
             padding: 12px 32px;
             border-radius: 40px;
@@ -127,7 +133,7 @@
         }
 
         .hero-content .btn:hover {
-            background-color: #1d4ed8;
+            background-color: #0f766e; /* Darker teal on hover */
         }
 
         /* ===== ABOUT ===== */
@@ -144,7 +150,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid white;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px -5px rgba(13,148,136,0.2); /* Teal shadow */
         }
 
         .about-text {
@@ -172,8 +178,8 @@
         }
 
         .skill-tag:hover {
-            border-color: #2563eb;
-            color: #2563eb;
+            border-color: #0d9488; /* Teal border on hover */
+            color: #0d9488;
         }
 
         /* ===== PROJECTS ===== */
@@ -194,8 +200,8 @@
 
         .project-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
-            border-color: #e2e8f0;
+            box-shadow: 0 20px 30px -10px rgba(13,148,136,0.2); /* Teal shadow on hover */
+            border-color: #cbd5e1;
         }
 
         .project-title {
@@ -274,7 +280,7 @@
         }
 
         .contact-links a:hover {
-            color: #2563eb;
+            color: #0d9488; /* Teal on hover */
         }
 
         /* ===== FOOTER ===== */
@@ -325,11 +331,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with teal pattern -->
     <section id="hero">
         <div class="hero-content container">
             <h1>ZSalie</h1>
-            <p class="tagline">Third-Year BIT · Aspiring Business Analyst</p>
+            <p class="tagline">Third-Year BIT · Aspiring Data Analyst</p>
             <a href="#projects" class="btn">See My Work</a>
         </div>
     </section>
@@ -343,7 +349,7 @@
             <div class="about-text">
                 <p>
                     I am a driven and accomplished third-year Bachelor of Computer and Information Sciences 
-                    (Application Development) student at EMERIS South Africa, specialising in business analytics. 
+                    (Application Development) student at EMERIS South Africa, specialising in data analytics. 
                     I demonstrate a strong aptitude for interpreting data, assessing trends, and applying insights 
                     to inform decision-making within academic and leadership contexts.
                 </p>
@@ -358,19 +364,15 @@
     <section id="skills" class="section container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
-            <!-- REPLACE with your actual skills -->
             <span class="skill-tag">Java</span>
-            <span class="skill-tag">Python</span>
             <span class="skill-tag">C#</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Kotlin</span>
             <span class="skill-tag">ASP.NET Core</span>
             <span class="skill-tag">Git & GitHub</span>
             <span class="skill-tag">Docker</span>
             <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
             <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Agile/Scrum</span>
         </div>
     </section>
 
@@ -422,7 +424,7 @@
         <div class="edu-item">
             <div class="edu-title">Bachelor of Computer and Information Sciences (Application Development)</div>
             <div class="edu-meta">EMERIS South Africa · Expected Graduation 2026</div>
-            <p>Relevant modules: Business Analytics, Software Engineering, Web Development, Database Systems, Cloud Computing, Data Structures & Algorithms.</p>
+            <p>Relevant modules: Information Systems, Programming C# and Programming Kotlin, Databases, Principles of Security, Project Management, Introduction to Research.</p>
         </div>
     </section>
 
@@ -433,7 +435,7 @@
             Feel free to reach out — I'm always open to discussing new opportunities, collaborations, or just tech in general.
         </p>
         <div class="contact-links">
-            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a>
+            <a href="mailto:zee.emeris@fakeEmail.com"><i class="fas fa-envelope"></i> zee.emeris@fakeEmail.com</a>
             <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/ZSalie" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
